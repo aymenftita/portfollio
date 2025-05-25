@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Chen - Cloud & Software Engineer</title>
+    <title>Aymen Ftita - Cloud & Software Engineer</title>
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -310,6 +310,98 @@
         .stat-label {
             color: var(--text-secondary);
             margin-top: 0.5rem;
+        }
+
+        /* Education Section */
+        .education-section {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+        }
+
+        .education-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-degree {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .education-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .education-institution {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Internship Section */
+        .internship-section {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+        }
+
+        .internship-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .internship-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .internship-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .internship-company {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .internship-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .internship-role {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .internship-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
 
         /* Skills Section */
@@ -646,6 +738,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#internships">Internships</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -656,7 +750,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQH0fyOUydgWIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715409185893?e=1753920000&v=beta&t=eIqFDQRTSGEhcpaNze_T_cdrRAysowKuXnv2vzfHqkk" alt="Aymen Ftita" class="profile-photo">
+            <img src="me_pro.jpg" alt="Aymen Ftita" class="profile-photo">
             <h1>Aymen Ftita</h1>
             <p class="subtitle">Cloud/DevOps & Software Engineer</p>
             <p class="description">
@@ -705,6 +799,80 @@
                     <div class="stat-number">3</div>
                     <div class="stat-label">Industry Sectors</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="scroll-animate">
+        <h2 class="section-title">Education</h2>
+        <div class="education-section">
+            <div class="education-item">
+                <div class="education-header">
+                    <h3 class="education-degree">Engineering Degree in Computer Science</h3>
+                    <span class="education-date">2023 - 2026</span>
+                </div>
+                <p class="education-institution">ESPRIT - Private School of Engineering and Technology</p>
+                <p class="education-description">
+                    Currently pursuing an engineering degree with a focus on cloud computing, software architecture, 
+                    and distributed systems. Specialized courses include advanced cloud technologies, DevOps practices, 
+                    and artificial intelligence applications.
+                </p>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3 class="education-degree">Bachelor's Degree in Computer Science</h3>
+                    <span class="education-date">2020 - 2023</span>
+                </div>
+                <p class="education-institution">ESSECT - Higher School of Economic and Commercial Sciences of Tunis</p>
+                <p class="education-description">
+                    Completed a comprehensive program covering fundamental computer science concepts including algorithms, 
+                    data structures, databases, and software engineering. Graduated with honors for outstanding academic 
+                    performance and project work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internships" class="scroll-animate">
+        <h2 class="section-title">Internships</h2>
+        <div class="internship-section">
+            <div class="internship-item">
+                <div class="internship-header">
+                    <h3 class="internship-company">Thor System</h3>
+                    <span class="internship-date">March 2023 - December 2023</span>
+                </div>
+                <p class="internship-role">Mobile App Developer</p>
+                <p class="internship-description">
+                    Developed cross-platform mobile applications using Flutter framework. Implemented features including 
+                    real-time data synchronization, geolocation services, and dynamic QR code generation. Collaborated 
+                    with UI/UX designers to create intuitive user interfaces and optimized app performance for various devices.
+                </p>
+            </div>
+            <div class="internship-item">
+                <div class="internship-header">
+                    <h3 class="internship-company">Wifak Bank</h3>
+                    <span class="internship-date">June 2024 - August 2024</span>
+                </div>
+                <p class="internship-role">Backend Developer</p>
+                <p class="internship-description">
+                    Worked on developing and maintaining banking backend systems using Spring Boot. Implemented secure 
+                    RESTful APIs for financial transactions, integrated with legacy systems, and contributed to the 
+                    development of microservices architecture. Participated in code reviews and system optimization.
+                </p>
+            </div>
+            <div class="internship-item">
+                <div class="internship-header">
+                    <h3 class="internship-company">ATB</h3>
+                    <span class="internship-date">June 2020 - July 2020</span>
+                </div>
+                <p class="internship-role">Database Administrator</p>
+                <p class="internship-description">
+                    Assisted in database administration tasks including performance tuning, backup and recovery procedures, 
+                    and data migration projects. Gained hands-on experience with Oracle Database systems and SQL optimization 
+                    techniques. Supported the IT team in maintaining data integrity and security standards.
+                </p>
             </div>
         </div>
     </section>
@@ -776,10 +944,6 @@
                         <span class="tech-tag">TensorFlow</span>
                         <span class="tech-tag">Microsoft Azure</span>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
                 </div>
             </div>
             <div class="project-card">
@@ -795,10 +959,6 @@
                         <span class="tech-tag">Firebase</span>
                         <span class="tech-tag">Mapbox</span>
                         <span class="tech-tag">Dart</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -818,10 +978,6 @@
                         <span class="tech-tag">Terraform</span>
                         <span class="tech-tag">Azure</span>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
                 </div>
             </div>
             <div class="project-card">
@@ -838,16 +994,28 @@
                         <span class="tech-tag">TensorFlow</span>
                         <span class="tech-tag">Python</span>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎓</div>
+                <div class="project-content">
+                    <h3 class="project-title">Nebgha.tn</h3>
+                    <p class="project-description">
+                        web and desktop application for online education and managing and tracking personal learning and progress,
+                        featuring a user-friendly interface and comprehensive analytics for students and educators.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">JavaFx</span>
+                        <span class="tech-tag">Mysql</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section --> 
     <section id="contact" class="scroll-animate">
         <h2 class="section-title">Let's Work Together</h2>
         <div class="contact-content">
@@ -856,30 +1024,16 @@
                 Whether you need cloud architecture consulting, software development, 
                 or just want to chat about technology, feel free to reach out!
             </p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
+        <h2 style="margin-bottom: 50px;" >Contact Me</h2>
         <div class="social-links">
             <a href="mailto:aymen.ftita1@gmail.com" class="social-link">📧</a>
-            <a href="https://www.linkedin.com/in/aymen-ftita-94a8a1208" class="social-link" target="_blank">💼</a>
-            <a href="https://github.com/aymenftita" class="social-link" target="_blank">🐙</a>
+            <a href="https://www.linkedin.com/in/aymen-ftita-94a8a1208" class="social-link" target="_blank"><img src="linkedin.png" alt="LinkedIn" style="height: 30px;"></a>
+            <a href="https://github.com/aymenftita" class="social-link" target="_blank"><img src="github.png" alt="GitHub" style="height: 30px;"></a>
             <a href="tel:+21697422604" class="social-link">📞</a>
         </div>
         <p>&copy; 2025 Aymen Ftita. All rights reserved.</p>
